@@ -1,6 +1,6 @@
 <!-- Please update value in the {}  -->
 
-<h1 align="center">3-column preview card component</h1>
+<h1 align="center">Loopstudios landing page</h1>
 
 <div align="center">
    Solution for a challenge from  <a href="https://www.frontendmentor.io" target="_blank">frontendmentor.io</a>.
@@ -75,9 +75,9 @@ See [Configuration Reference](https://www.11ty.dev/docs/config/).
 
 <!-- This section should list any articles or add-ons/plugins that helps you to complete the project. This is optional but it will help you in the future. For example: -->
 
-- [An Eleventy Starter with Tailwind CSS and Alpine.js](https://css-tricks.com/eleventy-starter-with-tailwind-css-alpine-js/)
+- [An Eleventy Starter with Tailwind CSS and Alpine.js - Article](https://css-tricks.com/eleventy-starter-with-tailwind-css-alpine-js/)
+- [11ty + tailwindcss + Alpine js starter by Greg Wolanski](https://github.com/gregwolanski/eleventy-tailwindcss-alpinejs-starter)
 - [Frontend Mentor](https://www.frontendmentor.io/)
-- [11ty + tailwindcss + Alpine js starter](https://github.com/gregwolanski/eleventy-tailwindcss-alpinejs-starter)
 
 ## Contact
 
