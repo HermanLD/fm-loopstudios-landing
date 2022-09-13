@@ -10,6 +10,9 @@ module.exports = function (eleventyConfig) {
   //   './node_modules/alpinejs/dist/cdn.js': './js/alpine.js',
   // })
   eleventyConfig.addPassthroughCopy({
+    "./js/index.js": "./js/bundle.js",
+  });
+  eleventyConfig.addPassthroughCopy({
     "./assets": "./assets",
   });
 

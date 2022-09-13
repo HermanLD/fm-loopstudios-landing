@@ -13,34 +13,38 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
     <link rel="stylesheet" href="./style.css?v={% version %}"/>
     {% block head %}{% endblock %}
-    {# <script defer src="/js/alpine.js?v={% version %}"></script> #}
+    <script defer="defer" src="/js/bundle.js?v={% version %}"></script>
   </head>
   <body>
-    <header>
-      <a href="/"><img src="./assets/images/logo.svg" alt="Loopstudios"></a>
-      <ul role="list">
+    <header class="flex justify-between items-center w-full -mb-[6.5rem] px-6 py-10">
+      <a class="relative z-50" href="/"><img class="w-36" src="/assets/images/logo.svg" alt="Loopstudios"></a>
+      <button aria-controls="loopstudio-nav" aria-expanded="false" class="relative z-50 sm:hidden">
+        <img src="/assets/images/icon-hamburger.svg" alt="menu closed" class="nav-icon">
+        <img class="nav-icon hidden" src="/assets/images/icon-close.svg" alt="menu open">
+      </button>
+      <ul class="font-sans text-2xl text-white uppercase fixed z-40 inset-0 hidden flex-col justify-center items-stretch h-screen bg-black sm:static" id="loopstudio-nav" role="list">
         <li>
-          <a href="#0">
+          <a class="block px-6 py-3" href="#0">
             About
           </a>
         </li>
         <li>
-          <a href="#0">
+          <a class="block px-6 py-3" href="#0">
             Careers
           </a>
         </li>
         <li>
-          <a href="#0">
+          <a class="block px-6 py-3" href="#0">
             Events
           </a>
         </li>
         <li>
-          <a href="#0">
+          <a class="block px-6 py-3" href="#0">
             Products
           </a>
         </li>
         <li>
-          <a href="#0">
+          <a class="block px-6 py-3" href="#0">
             Support
           </a>
         </li>
@@ -49,11 +53,11 @@
     {% block content %}
       {{ content | safe }}
     {% endblock %}
-    <footer>
+    <footer class="bg-black">
       <div>
         <div>
           <a href="/"><img src="/assets/images/logo.svg" alt="Loopstudios"></a>
-          <ul role="list">
+          <ul class="font-alata text-[0.9375rem] text-white" role="list">
             <li>
               <a href="#0">
                 About
@@ -83,7 +87,7 @@
         </div>
         <div></div>
       </div>
-      <div class="attribution">
+      <div class="attribution text-white">
         <p class="inline-block mb-3">© 2021 Loopstudios. All rights reserved.</p>
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
