@@ -10,7 +10,7 @@
     {% endif %}
     <meta http-equiv="x-ua-compatible" content="ie=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover"/>
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
     <link rel="stylesheet" href="./style.css?v={% version %}"/>
     {% block head %}{% endblock %}
     <script defer="defer" src="/js/bundle.js?v={% version %}"></script>
@@ -53,11 +53,11 @@
     {% block content %}
       {{ content | safe }}
     {% endblock %}
-    <footer class="bg-black">
-      <div>
-        <div>
-          <a href="/"><img src="/assets/images/logo.svg" alt="Loopstudios"></a>
-          <ul class="font-alata text-[0.9375rem] text-white" role="list">
+    <footer class="bg-black px-12 py-14">
+      <div class="mb-12">
+        <div class="flex flex-col justify-center items-center">
+          <a class="mb-8" href="/"><img class="w-36" src="/assets/images/logo.svg" alt="Loopstudios"></a>
+          <ul class="flex flex-col justify-center items-center font-alata text-[0.9375rem] text-white gap-4" role="list">
             <li>
               <a href="#0">
                 About
@@ -87,11 +87,29 @@
         </div>
         <div></div>
       </div>
-      <div class="attribution text-white">
-        <p class="inline-block mb-3">© 2021 Loopstudios. All rights reserved.</p>
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
-        <a href="#">Herman Dardon</a>.
+      <div>
+        <ul class="flex justify-center items-center gap-4 mb-4">
+          <li>
+            <a href="#0"><img src="/assets/images/icon-facebook.svg" alt="Facebook"></a>
+          </li>
+          <li>
+            <a href="#0"><img src="/assets/images/icon-twitter.svg" alt="Twitter"></a>
+          </li>
+          <li>
+            <a href="#0"><img src="/assets/images/icon-pinterest.svg" alt="Pintrest"></a>
+          </li>
+          <li>
+            <a href="#0"><img src="/assets/images/icon-instagram.svg" alt="Instagram"></a>
+          </li>
+        </ul>
+        <p class="text-[15px] text-dark-grey font-alata inline-block mb-3">© 2021 Loopstudios. All rights reserved.</p>
+      </div>
+      <div class="attribution text-dark-grey">
+        <p>
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
+          <a href="#">Herman Dardon</a>.
+        </p>
       </div>
     </footer>
   </body>
